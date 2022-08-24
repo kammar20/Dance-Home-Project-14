@@ -35,7 +35,7 @@ li {
 
 /* container */
 .container {
-  max-width: 1800px;
+  max-width: 1920px;
   margin: auto;
   background-color: var(--off-white);
 }
@@ -69,6 +69,16 @@ li {
 .left-img .main-bg {
   width: 100%;
   height: 100vh;
+}
+
+/* hamnurger */
+.hamburger {
+  display: none;
+}
+
+.hamburger .menu-icon {
+  font-size: 2rem;
+  color: var(--black);
 }
 
 /*****************************/
@@ -289,7 +299,6 @@ li {
 .dancing-img {
   width: 100%;
 }
-
 .dancing-img img {
   width: 100%;
   height: 30rem;
@@ -307,4 +316,299 @@ li {
   position: absolute;
   right: -6px;
   top: -100px;
+}
+
+/******* Common Media query for Device ranges from 0-767px *******/
+@media only screen and (max-width: 767px) {
+  /**** header ****/
+  .head {
+    flex-direction: column;
+    padding: 1.5rem 2%;
+  }
+
+  /**** left image ****/
+  .left-img {
+    width: 100%;
+    position: static;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 5rem;
+  }
+
+  /* logo */
+  .left-img .logo {
+    width: 8rem;
+    position: static;
+  }
+
+  /* hamburger */
+  .hamburger {
+    display: block;
+  }
+
+  /* main bg */
+  .left-img .main-bg {
+    display: none;
+  }
+
+  /**** right content ****/
+  .right-content {
+    width: 100%;
+    padding: 0;
+  }
+
+  /* navbar */
+  .navbar {
+    display: none;
+  }
+
+  /**** creative section ****/
+  .creative {
+    padding: 0;
+    flex-direction: column;
+    margin-bottom: 3rem;
+  }
+
+  /* big text */
+  .big-text h1 {
+    font-size: 7rem;
+    line-height: 7.5rem;
+    margin-bottom: 2rem;
+  }
+
+  /* filled */
+  .filled {
+    margin-left: 10rem;
+  }
+
+  /* small text */
+  .small-text p {
+    font-size: 1.7rem;
+    margin-left: 0;
+    margin-bottom: 3rem;
+  }
+
+  /* social */
+  .social {
+    flex-direction: row;
+    justify-content: space-around;
+    margin-left: 0;
+  }
+
+  /* button */
+  .button {
+    justify-content: center;
+    margin-bottom: 4rem;
+  }
+
+  .btn {
+    padding: 1.2rem 2.8rem;
+    font-size: 1.4rem;
+  }
+
+  /**** feature section ****/
+  .feature {
+    padding: 0;
+    flex-direction: column;
+  }
+
+  /* v-line */
+  .v-line {
+    display: none;
+  }
+
+  /* feature list */
+  .feature-list {
+    width: 100%;
+    margin-bottom: 3rem;
+  }
+
+  /* showcase image */
+  .showcase-section {
+    width: 100%;
+    order: 2;
+  }
+
+  .arrow-img img {
+    width: 2.5rem;
+    position: absolute;
+    right: 15px;
+    top: -240px;
+  }
+}
+
+/**** media query for samsung fold and smaller device ****/
+
+@media only screen and (max-width: 280px) {
+  /* big text */
+  .big-text h1 {
+    font-size: 6rem;
+    line-height: 7rem;
+    margin-bottom: 2rem;
+  }
+
+  /* filled */
+  .filled {
+    margin-left: 9rem;
+  }
+
+  /* small text */
+  .small-text p {
+    font-size: 1.5rem;
+    margin-bottom: 3rem;
+  }
+}
+
+/**** Media query for medium size device ****/
+@media only screen and (min-width: 421px) and (max-width: 550px) {
+  /* creative */
+  .creative {
+    margin-bottom: 4rem;
+  }
+
+  /* big text */
+  .big-text h1 {
+    font-size: 9rem;
+    line-height: 9rem;
+    margin-bottom: 3rem;
+  }
+
+  /* filled */
+  .filled {
+    margin-left: 13rem;
+  }
+
+  /* small text */
+  .small-text p {
+    font-size: 1.9rem;
+    margin-bottom: 3rem;
+  }
+}
+
+/**** Media query for large mobile ****/
+@media only screen and (min-width: 551px) and (max-width: 767px) {
+  /* creative */
+  .creative {
+    margin-bottom: 6rem;
+  }
+
+  /* big text */
+  .big-text h1 {
+    font-size: 12rem;
+    line-height: 12rem;
+    margin-bottom: 3rem;
+  }
+
+  /* filled */
+  .filled {
+    margin-left: 17rem;
+  }
+
+  /* small text */
+  .small-text p {
+    font-size: 2.2rem;
+    margin-bottom: 4rem;
+  }
+
+  /* btn */
+  .btn {
+    padding: 1.2rem 3rem;
+    font-size: 1.6rem;
+  }
+
+  /* social images */
+  .social img {
+    width: 3rem;
+  }
+
+  /* twitter */
+  .social .tw {
+    width: 3.5rem;
+  }
+  /* facebook */
+  .social .fb {
+    width: 2.2rem;
+  }
+}
+
+/**** Media query for ipad ****/
+@media only screen and (min-width: 768px) and (max-width: 1200px) {
+  /**** left ****/
+
+  /*** logo ***/
+  .left-img .logo {
+    width: 9rem;
+    position: absolute;
+    top: 30px;
+    left: 80px;
+  }
+
+  /*** main bg ***/
+  .left-img .main-bg {
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    object-position: center top;
+  }
+
+  /*** right ***/
+  .right-content {
+    padding: 3rem 2%;
+  }
+
+  /* navbar */
+  .h-line {
+    display: none;
+  }
+
+  /* navlink */
+  .nav-link {
+    font-size: 1.6rem;
+    margin-left: 5rem;
+  }
+  /*** Creative Section ***/
+  .creative {
+    flex-direction: column;
+  }
+
+  /* big text */
+  .big-text h1 {
+    font-size: 10rem;
+    margin-bottom: 3rem;
+  }
+
+  /* filled */
+  .filled {
+    margin-left: 14.5rem;
+  }
+
+  /*** Small Text ***/
+  .small-text {
+    align-self: flex-end;
+    margin-left: 0;
+  }
+
+  .small-text p {
+    font-size: 1.8rem;
+    margin-bottom: 3rem;
+  }
+
+  /** Social **/
+  .social {
+    flex-direction: row;
+    margin-left: 0;
+    justify-content: space-around;
+  }
+
+  /***** Button Section *****/
+  .button {
+    display: flex;
+    justify-content: center;
+  }
+
+  /* arrow */
+  .arrow-img {
+    display: none;
+  }
 }

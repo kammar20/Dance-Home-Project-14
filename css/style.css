@@ -252,6 +252,13 @@ li {
   margin-bottom: 3rem;
   position: relative;
   line-height: 1;
+  cursor: pointer;
+  transition: all 0.3s ease-in;
+}
+
+.feature-list li:hover {
+  color: var(--gray);
+  font-weight: 500;
 }
 
 /* before li filled circle */

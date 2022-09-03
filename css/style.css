@@ -182,6 +182,12 @@ li {
 
 .social img {
   width: 2rem;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.social img:hover {
+  transform: translateY(-0.2rem);
 }
 
 /* twitter */
